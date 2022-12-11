@@ -1,0 +1,36 @@
+@import "../../scss/global";
+.app {
+  background: linear-gradient(180deg, #2d3a58 0%, #171e2e 82.41%);
+  font-size: $fontSize-sm;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 100px;
+  margin-bottom: 300px;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  &.inactive {
+    display: none;
+  }
+
+  ul {
+    @include d-flex(center, center, row);
+    flex-wrap: wrap;
+
+    li {
+      max-height: 430px;
+      max-width: 230px;
+      @include medium {
+        margin: 0 2.5% 2.5% 2.5%;
+      }
+    }
+  }
+}

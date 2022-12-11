@@ -1,0 +1,37 @@
+@import "../../scss/global.scss";
+
+.header {
+  width: 100vw;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  color: white;
+
+  margin-top: 5px;
+
+  @include medium {
+    width: 95vw;
+    padding: 20px;
+
+    @include large {
+      width: 90vw;
+    }
+
+    &__logo {
+      @include large {
+        width: 75px;
+        height: 56px;
+      }
+    }
+
+    h1 {
+      font-weight: 100;
+      padding: 5px;
+    }
+  }
+}

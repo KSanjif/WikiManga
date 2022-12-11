@@ -1,0 +1,28 @@
+@mixin medium() {
+  @media (min-width: 525px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin large() {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin x-large() {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin d-flex($justify-content, $align-items, $flex-direction) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}

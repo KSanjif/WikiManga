@@ -1,0 +1,55 @@
+@import "../../scss/global.scss";
+
+.anime {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 300px;
+
+  @include large {
+    padding: 40px;
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 40px;
+  }
+  h2 {
+    font-size: 26px;
+    margin: 20px 0px;
+  }
+
+  li {
+    margin: 40px 0px;
+    @include large {
+      margin-left: 40px;
+    }
+  }
+
+  &__poster {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    @include large {
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      img {
+        width: 376px;
+        height: 560px;
+      }
+    }
+  }
+
+  &__infos {
+    margin-top: 100px;
+  }
+}

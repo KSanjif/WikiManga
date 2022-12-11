@@ -1,0 +1,9 @@
+@import "../scss/global";
+.app {
+  background: linear-gradient(180deg, #2d3a58 0%, #171e2e 82.41%);
+  font-size: $fontSize-sm;
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+}
