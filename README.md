@@ -1,4 +1,4 @@
 # WikiManga
-Faire ```bash npm install ```
+Faire ```npm install ```
 
- Faire ```bash npm start ``` 
+ Faire ```npm start ``` 
